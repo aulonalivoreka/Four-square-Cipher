@@ -27,3 +27,28 @@ def evaluate(ref1, ref2):
 
 def search(matrix, letter):
     return matrix.index(letter) if letter in matrix else -1
+
+def encrypt(message, key1, key2):
+    matrix1 = makeKeyMatrix(removeDuplicates(key1))
+    matrix2 = makeKeyMatrix(removeDuplicates(key2))
+    refMatrix = makeReferenceMatrix()
+
+    print("\nKey 1 Matrix:")
+    printMatrix(matrix1)
+    print("\nKey 2 Matrix:")
+    printMatrix(matrix2)
+    print("\nReference Matrix:")
+    printMatrix(refMatrix)
+
+    encrypted = []
+    for i in range(0, len(message), 2):
+        if i + 1 < len(message):
+            a, b = search(refMatrix, message[i]), search(refMatrix, message[i+1])
+            encrypted.append(matrix1[evaluate(a, b)])
+            encrypted.append(matrix2[evaluate(b, a)])
+        else:
+            a = search(refMatrix, message[i])
+            encrypted.append(matrix1[a]) 
+
+    return ''.join(encrypted)
+
