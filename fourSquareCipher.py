@@ -16,3 +16,14 @@ def makeReferenceMatrix():
 def printMatrix(matrix):
     for i in range(0, len(matrix), 5):
         print(" ".join(matrix[i:i+5]))
+
+def removeDuplicates(key):
+    seen = set()
+    return ''.join([char for char in key if not (char in seen or seen.add(char))])
+
+
+def evaluate(ref1, ref2):
+    return (ref1 // 5) * 5 + ref2 % 5
+
+def search(matrix, letter):
+    return matrix.index(letter) if letter in matrix else -1
