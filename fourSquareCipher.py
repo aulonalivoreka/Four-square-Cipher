@@ -1,4 +1,7 @@
-alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y']
+#alfabeti pa shkronjen Q 
+
+alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','X','Y','Z']
+
 
 def getData():
     dataInput = input()
@@ -17,6 +20,7 @@ def printMatrix(matrix):
     for i in range(0, len(matrix), 5):
         print(" ".join(matrix[i:i+5]))
 
+
 def removeDuplicates(key):
     seen = set()
     return ''.join([char for char in key if not (char in seen or seen.add(char))])
@@ -27,6 +31,7 @@ def evaluate(ref1, ref2):
 
 def search(matrix, letter):
     return matrix.index(letter) if letter in matrix else -1
+
 
 def encrypt(message, key1, key2):
     matrix1 = makeKeyMatrix(removeDuplicates(key1))
