@@ -34,6 +34,72 @@ To run the script, execute the following command in your terminal:
 python fourSquareCipher.py
 ``` 
 
+### How It Works
+- **Input Keys**: The user is prompted to enter two keys for the matrices. These keys should contain letters from A-Z (excluding Q) and should not have spaces.
+- **Input Message**: The user is prompted to input the message to be encrypted. Spaces are allowed but will be filtered out.
+- **Encryption**: The script divides the input message into digraphs (pairs of letters), finds their positions in the reference matrix, and transforms them according to the key matrices to produce the ciphertext.
+- **Decryption**: The script uses the encrypted message and the key matrices to retrieve the original message by reversing the encryption process.
+
+#### Functions
+- `getData`: Prompts for and validates user input.
+- `makeKeyMatrix`: Creates a 5x5 matrix for a given key.
+- `makeReferenceMatrix`: Generates the default reference matrix.
+- `printMatrix`: Displays a matrix in a readable 5x5 format.
+- `encrypt`: Encrypts the message using two key matrices.
+- `decrypt`: Decrypts the message using the same matrices.
+
+### Example Usage
+**Input:**
+- `Enter Key 1 (only A-Z, excluding Q)`: EXAMPLE
+- `Enter Key 2 (only A-Z, excluding Q)`: CIPHER
+- `Enter the message to encrypt (only A-Z, excluding Q)`: HELLO WORLD
+
+### Example Usage
+
+**Input:**
+
+- Enter Key 1 (only A-Z, excluding Q): `EXAMPLE`
+- Enter Key 2 (only A-Z, excluding Q): `CIPHER`
+- Enter the message to encrypt (only A-Z, excluding Q): `HELLO WORLD`
+
+**Output:**  
+`****** Four Square Cipher ******`
+
+**Key 1 Matrix:**
+```
+E X A M P
+L B C D F
+G H I J K
+N O R S T
+U V W Y Z
+```
+
+Key 2 Matrix:
+```
+C I P H E
+R A B D F
+G J K L M
+N O Q S T
+U V W X Y
+```
+
+Reference Matrix:
+```
+A B C D E
+F G H I J
+K L M N O
+P R S T U
+V W X Y Z
+```
+
+**Encrypted Message:** `FPHJKZZJOJM`  
+**Decrypted Message:** `HELLOZWORLD`
+
+## Notes
+- Key 1 and Key 2 matrixes are case-sensitive (excluding Q character and spaces) and the encryption and decryption handle only alphabetic characters.
+- Error handling is in place for invalid inputs.
+
+
 ### Authors 
 
 - [Aulona Livoreka](https://github.com/aulonalivoreka)
