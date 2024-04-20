@@ -29,11 +29,8 @@ Download the script fourSquareCipher.py to your local machine.
 Open a terminal or command prompt.
 Navigate to the directory where the script is located.
 Running the Script
-To run the script, execute the following command in your terminal:
-
-python fourSquareCipher.py
-
-
+To run the script, execute the following command in your terminal: 
+```bash python fourSquareCipher.py
 
 
 ### Authors 
