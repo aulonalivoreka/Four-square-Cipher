@@ -37,16 +37,21 @@ def printMatrix(matrix):
         print(" ".join(matrix[i:i+5]))
 
 
+
 def removeDuplicates(key):
+    # Largohen karakteret duplikat nga nje string
     seen = set()
     return ''.join([char for char in key if not (char in seen or seen.add(char))])
 
-
 def evaluate(ref1, ref2):
+    # Evaluohet pozita e re bazuar ne transformimin e rreshtave dhe kolonave 
+    # Aplikohet formula per te percaktuar poziten e re
     return (ref1 // 5) * 5 + ref2 % 5
 
 def search(matrix, letter):
+    # Return indeksin e shkronjes ne matrice
     return matrix.index(letter) if letter in matrix else -1
+
 
 
 def encrypt(message, key1, key2):
