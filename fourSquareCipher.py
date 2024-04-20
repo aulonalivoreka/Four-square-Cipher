@@ -56,6 +56,7 @@ def encrypt(message, key1, key2):
     matrix2 = makeKeyMatrix(removeDuplicates(key2))
     refMatrix = makeReferenceMatrix()
 
+    # Paraqit matricat e celesave dhe matricen referente 
     print("\nKey 1 Matrix:")
     printMatrix(matrix1)
     print("\nKey 2 Matrix:")
