@@ -48,12 +48,6 @@ python fourSquareCipher.py
 - `decrypt`: Decrypts the message using the same matrices.
 
 ### Example Usage
-**Input:**
-- `Enter Key 1 (only A-Z, excluding Q)`: EXAMPLE
-- `Enter Key 2 (only A-Z, excluding Q)`: CIPHER
-- `Enter the message to encrypt (only A-Z, excluding Q)`: HELLO WORLD
-
-### Example Usage
 
 **Input:**
 
