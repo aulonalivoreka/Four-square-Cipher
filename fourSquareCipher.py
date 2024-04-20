@@ -22,6 +22,8 @@ def printMatrix(matrix):
 
 if allow_spaces:
             filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
+     else:
+            filtered_data = ''.join([char for char in dataInput if char in alphabet])
 
 def removeDuplicates(key):
     seen = set()
