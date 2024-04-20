@@ -52,8 +52,8 @@ python fourSquareCipher.py
 - `makeKeyMatrix`: Creates a 5x5 matrix for a given key.
 - `makeReferenceMatrix`: Generates the default reference matrix.
 - `printMatrix`: Displays a matrix in a readable 5x5 format.
-- `encrypt`: Encrypts the message using two key matrices.
-- `decrypt`: Decrypts the message using the same matrices.
+- `encrypt`: Encrypts the message using two key matrixes.
+- `decrypt`: Decrypts the message using the same matrixes.
 
 ### Example Usage
 
