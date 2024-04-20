@@ -70,6 +70,7 @@ def encrypt(message, key1, key2):
     printMatrix(refMatrix)
 
     encrypted = []
+    # Itero ne mesazh permes cifteve te karaktereve 
     for i in range(0, len(message), 2):
         if i + 1 < len(message):
             # Gjej pozitat e karaktereve ne matricen referente
