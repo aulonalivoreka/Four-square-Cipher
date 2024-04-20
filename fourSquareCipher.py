@@ -6,12 +6,22 @@ alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R',
 def getData():
     dataInput = input()
     return ''.join([char for char in dataInput.upper() if char in alphabet])
-
-if allow_spaces:
+    
+    
+    if allow_spaces:
 # Perfshi spaces ne te dhenat e filtruara nese lejohet
             filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
      else:
             filtered_data = ''.join([char for char in dataInput if char in alphabet])
+         
+                 
+    # Valido inputin bazuar nese lejohen spaces apo jo 
+        if not allow_spaces and len(filtered_data) != len(dataInput):
+            print("Invalid input. Please use only alphabetic characters from A-Z.")
+        elif allow_spaces and not all(char in alphabet or char == ' ' for char in dataInput):
+            print("Invalid input. Please use only alphabetic characters from A-Z.")
+        else:
+            return filtered_data
 
 def makeKeyMatrix(key):
     seen = set()
