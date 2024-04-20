@@ -100,3 +100,7 @@ V W X Y Z
 - Key 1 and Key 2 matrixes are case-sensitive (excluding Q character and spaces) and the encryption and decryption handle only alphabetic characters.
 - Error handling is in place for invalid inputs.
 
+# Expected Outcomes:
+**1.Enhanced Security:** The Four-square cipher offers higher security compared to monographic substitution ciphers due to its use of digraphs. By encrypting pairs of letters, it becomes less susceptible to frequency analysis attacks.
+**2.Ease of Use:** With a user-friendly interface and clear instructions, users should be able to encrypt and decrypt messages easily.
+
