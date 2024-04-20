@@ -79,6 +79,7 @@ def encrypt(message, key1, key2):
             encrypted.append(matrix1[evaluate(a, b)])
             encrypted.append(matrix2[evaluate(b, a)])
         else:
+            # Menaxhimi i rastit kur kemi numer tek te karaktereve
             a = search(refMatrix, message[i])
             encrypted.append(matrix1[a]) 
 
