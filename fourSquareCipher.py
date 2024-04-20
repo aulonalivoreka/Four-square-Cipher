@@ -75,6 +75,7 @@ def encrypt(message, key1, key2):
         if i + 1 < len(message):
             # Gjej pozitat e karaktereve ne matricen referente
             a, b = search(refMatrix, message[i]), search(refMatrix, message[i+1])
+            # Enkrito karakteret duke perdorur matricat e celesave 
             encrypted.append(matrix1[evaluate(a, b)])
             encrypted.append(matrix2[evaluate(b, a)])
         else:
