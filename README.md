@@ -23,8 +23,7 @@ Using the row of the first letter and the column of the second letter, find the 
 This Python script implements the Four-square cipher. This implementation excludes the letter 'Q' from the alphabet to fit the matrix and allows for encryption and decryption of messages using two separate keys.
 
 ### Requirements
-Python 3.9
-Ensure Python 3 is installed on your system.
+Python 3.9. Ensure Python 3 is installed on your system.
 Download the script fourSquareCipher.py to your local machine.
 Open a terminal or command prompt.
 Navigate to the directory where the script is located.
