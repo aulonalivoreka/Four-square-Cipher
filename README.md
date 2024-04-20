@@ -1,4 +1,5 @@
 # Second Project in Data Security 
+This project was completed by sophomore students from the Faculty of Electrical and Computer Engineering at the University of Hasan Prishtina, under the expert guidance of Prof. Dr. Blerim Rexha and Ass. Mërgim Hoti, as part of our coursework in Data Security.
 
 ## Encryption and Decryption Using the Four-Square Cipher
 
