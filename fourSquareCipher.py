@@ -21,6 +21,7 @@ def printMatrix(matrix):
         print(" ".join(matrix[i:i+5]))
 
 if allow_spaces:
+# Perfshi spaces ne te dhenat e filtruara nese lejohet
             filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
      else:
             filtered_data = ''.join([char for char in dataInput if char in alphabet])
