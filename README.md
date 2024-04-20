@@ -96,11 +96,11 @@ V W X Y Z
 **Encrypted Message:** `FPHJKZZJOJM`  
 **Decrypted Message:** `HELLOZWORLD`
 
-## Notes
+### Notes
 - Key 1 and Key 2 matrixes are case-sensitive (excluding Q character and spaces) and the encryption and decryption handle only alphabetic characters.
 - Error handling is in place for invalid inputs.
 
-## Expected Outcomes:
+### Expected Outcomes:
 - **Enhanced Security:** The Four-square cipher offers higher security compared to monographic substitution ciphers due to its use of digraphs. By encrypting pairs of letters, it becomes less susceptible to frequency analysis attacks. 
 - **Ease of Use:** With a user-friendly interface and clear instructions, users should be able to encrypt and decrypt messages easily.
 - **Flexibility:** The project allows users to input their own keys, providing flexibility in choosing encryption parameters.
