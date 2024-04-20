@@ -1,6 +1,13 @@
 # Second Project in Data Security 
 This project was completed by sophomore students from the Faculty of Electrical and Computer Engineering at the University of "Hasan Prishtina", under the expert guidance of Prof. Dr. Blerim Rexha and Ass. Mërgim Hoti, as part of our coursework in Data Security.
 
+### Authors 
+
+- [Aulona Livoreka](https://github.com/aulonalivoreka)
+- [Artina Qorrolli](https://github.com/ArtinaQorrolli)
+- [Aulona Ramosaj](https://github.com/aulonaramosaj)
+- [Artin Dulahi](https://github.com/ArtinDulahi)
+
 ## Encryption and Decryption Using the Four-Square Cipher
 
 The Four-square cipher is a type of polygraphic substitution cipher that encodes pairs of letters (digraphs), enhancing its security compared to simpler substitution ciphers.This adds significant strength to the encryption when compared with monographic substitution ciphers which operate on single characters. The use of digraphs makes the four-square technique less susceptible to frequency analysis attacks, as the analysis must be done on 676 possible digraphs rather than just 26 for monographic substitution. This method was developed by Félix Delastelle, a French amateur cryptographer, and first described in 1902. While similar to the Playfair cipher, the Four-square cipher employs four 5x5 matrices, adding complexity to the encryption process.
@@ -92,12 +99,4 @@ V W X Y Z
 ## Notes
 - Key 1 and Key 2 matrixes are case-sensitive (excluding Q character and spaces) and the encryption and decryption handle only alphabetic characters.
 - Error handling is in place for invalid inputs.
-
-
-### Authors 
-
-- [Aulona Livoreka](https://github.com/aulonalivoreka)
-- [Artina Qorrolli](https://github.com/ArtinaQorrolli)
-- [Aulona Ramosaj](https://github.com/aulonaramosaj)
-- [Artin Dulahi](https://github.com/ArtinDulahi)
 
