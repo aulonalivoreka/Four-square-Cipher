@@ -75,3 +75,22 @@ def decrypt(ciphertext, key1, key2):
 
     return ''.join(decrypted)
 
+
+def main():
+    print("** Four Square Cipher ***\n")
+    print("Enter Key 1: ", end=' ')
+    key1 = getData()
+    print("\nEnter Key 2: ", end=' ')
+    key2 = getData()
+    print("\nEnter the message to encrypt (only A-Z): ", end=' ')
+    message = getData()
+
+    encrypted_message = encrypt(message, key1, key2)
+    print("\nEncrypted Message: ", encrypted_message)
+
+    decrypted_message = decrypt(encrypted_message, key1, key2)
+    print("\nDecrypted Message: ", decrypted_message)
+
+if __name__ == "__main__":
+    main()
+
