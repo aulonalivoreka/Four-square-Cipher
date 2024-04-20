@@ -83,6 +83,7 @@ def encrypt(message, key1, key2):
     
 
 def decrypt(ciphertext, key1, key2):
+    # Dekripto mesazhin duke perdorur matricat e celesave 
     matrix1 = makeKeyMatrix(removeDuplicates(key1))
     matrix2 = makeKeyMatrix(removeDuplicates(key2))
     refMatrix = makeReferenceMatrix()
@@ -98,7 +99,7 @@ def decrypt(ciphertext, key1, key2):
             decrypted.append(refMatrix[a])
 
     return ''.join(decrypted)
-
+    
 
 def main():
     print("****** Four Square Cipher *******\n")
