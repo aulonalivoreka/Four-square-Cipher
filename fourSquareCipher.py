@@ -50,6 +50,8 @@ def search(matrix, letter):
 
 
 def encrypt(message, key1, key2):
+    # Enkripto mesazhin duke perdorur dy celesat e matrices
+    # Krijo matricat bazuar ne celesat dhe matricen referente 
     matrix1 = makeKeyMatrix(removeDuplicates(key1))
     matrix2 = makeKeyMatrix(removeDuplicates(key2))
     refMatrix = makeReferenceMatrix()
