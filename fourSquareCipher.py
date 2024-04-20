@@ -93,13 +93,10 @@ def decrypt(ciphertext, key1, key2):
 
 
 def main():
-    print("** Four Square Cipher ***\n")
-    print("Enter Key 1: ", end=' ')
-    key1 = getData()
-    print("\nEnter Key 2: ", end=' ')
-    key2 = getData()
-    print("\nEnter the message to encrypt (only A-Z): ", end=' ')
-    message = getData()
+    print("****** Four Square Cipher *******\n")
+    key1 = getData("Enter Key 1 (only A-Z, excluding Q): ", allow_spaces=False)
+    key2 = getData("Enter Key 2 (only A-Z, excluding Q): ", allow_spaces=False)
+    message = getData("Enter the message to encrypt (only A-Z, excluding Q): ", allow_spaces=True)
 
     encrypted_message = encrypt(message, key1, key2)
     print("\nEncrypted Message: ", encrypted_message)
