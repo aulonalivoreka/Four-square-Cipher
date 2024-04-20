@@ -51,4 +51,22 @@ def encrypt(message, key1, key2):
             encrypted.append(matrix1[a]) 
 
     return ''.join(encrypted)
+    
+
+def decrypt(ciphertext, key1, key2):
+    matrix1 = makeKeyMatrix(removeDuplicates(key1))
+    matrix2 = makeKeyMatrix(removeDuplicates(key2))
+    refMatrix = makeReferenceMatrix()
+
+    decrypted = []
+    for i in range(0, len(ciphertext), 2):
+        if i + 1 < len(ciphertext):
+            a, b = search(matrix1, ciphertext[i]), search(matrix2, ciphertext[i+1])
+            decrypted.append(refMatrix[evaluate(a, b)])
+            decrypted.append(refMatrix[evaluate(b, a)])
+        else:
+            a = search(matrix1, ciphertext[i])
+            decrypted.append(refMatrix[a])
+
+    return ''.join(decrypted)
 
