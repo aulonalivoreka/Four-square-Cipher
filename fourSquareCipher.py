@@ -20,6 +20,8 @@ def printMatrix(matrix):
     for i in range(0, len(matrix), 5):
         print(" ".join(matrix[i:i+5]))
 
+if allow_spaces:
+            filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
 
 def removeDuplicates(key):
     seen = set()
