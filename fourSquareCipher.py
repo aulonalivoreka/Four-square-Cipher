@@ -7,6 +7,12 @@ def getData():
     dataInput = input()
     return ''.join([char for char in dataInput.upper() if char in alphabet])
 
+if allow_spaces:
+# Perfshi spaces ne te dhenat e filtruara nese lejohet
+            filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
+     else:
+            filtered_data = ''.join([char for char in dataInput if char in alphabet])
+
 def makeKeyMatrix(key):
     seen = set()
     matrix = [char for char in key if char in alphabet and not (char in seen or seen.add(char))]
@@ -20,11 +26,6 @@ def printMatrix(matrix):
     for i in range(0, len(matrix), 5):
         print(" ".join(matrix[i:i+5]))
 
-if allow_spaces:
-# Perfshi spaces ne te dhenat e filtruara nese lejohet
-            filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
-     else:
-            filtered_data = ''.join([char for char in dataInput if char in alphabet])
 
 def removeDuplicates(key):
     seen = set()
