@@ -74,7 +74,7 @@ N O R S T
 U V W Y Z
 ```
 
-Key 2 Matrix:
+**Key 2 Matrix:**
 ```
 C I P H E
 R A B D F
@@ -83,7 +83,7 @@ N O Q S T
 U V W X Y
 ```
 
-Reference Matrix:
+**Reference Matrix:**
 ```
 A B C D E
 F G H I J
