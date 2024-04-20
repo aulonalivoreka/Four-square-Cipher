@@ -19,9 +19,27 @@ The decryption process mirrors encryption but uses the positions of letters in t
 For each digraph in the ciphertext, identify the positions of the letters in the top right (Grid 2) and bottom right (Grid 3).
 Using the row of the first letter and the column of the second letter, find the corresponding plaintext letters in the top left (Grid 1) and bottom left (Grid 4) grids.
 
+## Four-Square Cipher Implementation
+This Python script implements the Four-square cipher. This implementation excludes the letter 'Q' from the alphabet to fit the matrix and allows for encryption and decryption of messages using two separate keys.
+
+### Requirements
+Python 3.9
+Ensure Python 3 is installed on your system.
+Download the script fourSquareCipher.py to your local machine.
+Open a terminal or command prompt.
+Navigate to the directory where the script is located.
+Running the Script
+To run the script, execute the following command in your terminal:
+
+python fourSquareCipher.py
+
+
+
+
 ### Authors 
 
 - [Aulona Livoreka](https://github.com/aulonalivoreka)
 - [Artina Qorrolli](https://github.com/ArtinaQorrolli)
 - [Aulona Ramosaj](https://github.com/aulonaramosaj)
 - [Artin Dulahi](https://github.com/ArtinDulahi)
+
