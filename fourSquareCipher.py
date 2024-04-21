@@ -24,7 +24,9 @@ def getData(prompt, allow_spaces=False):
             return filtered_data
 
 def makeKeyMatrix(key):
+    #Krijo nje matrice 5x5 nga celesi i dhene, duke larguar duplikatet dhe duke bere i permbushur me shkronjat e mbetura
     seen = set()
+    #Filtro karakteret duplikat dhe krijo matricen 
     matrix = [char for char in key if char in alphabet and not (char in seen or seen.add(char))]
     matrix += [char for char in alphabet if char not in seen]
     return ''.join(matrix)
