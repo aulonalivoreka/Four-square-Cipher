@@ -40,6 +40,7 @@ To run the script, execute the following command in your terminal:
 ```bash
 python fourSquareCipher.py
 ``` 
+You can also run the script by cloning this repository and running it in the code compiler of choice, like Visual Studio Code. 
 
 ### How It Works
 - **Input Keys**: The user is prompted to enter two keys for the matrices. These keys should contain letters from A-Z (excluding Q) and should not have spaces.
