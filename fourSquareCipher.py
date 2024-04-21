@@ -7,9 +7,9 @@ def getData():
     dataInput = input()
     return ''.join([char for char in dataInput.upper() if char in alphabet])
     
-    
+    # Check nese lejohen spaces
     if allow_spaces:
-# Perfshi spaces ne te dhenat e filtruara nese lejohet
+            # Perfshi spaces ne te dhenat e filtruara nese lejohet
             filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
      else:
             filtered_data = ''.join([char for char in dataInput if char in alphabet])
