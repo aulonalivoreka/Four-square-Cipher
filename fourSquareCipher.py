@@ -3,9 +3,9 @@
 alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','X','Y','Z']
 
 
-def getData():
-    dataInput = input()
-    return ''.join([char for char in dataInput.upper() if char in alphabet])
+def getData(prompt, allow_spaces=False):
+    while True:
+    dataInput = input(prompt).upper()
     
     # Check nese lejohen spaces
     if allow_spaces:
