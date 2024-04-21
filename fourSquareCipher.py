@@ -36,6 +36,7 @@ def makeReferenceMatrix():
     return ''.join(alphabet)
 
 def printMatrix(matrix):
+    #Printohet matrica ne formatin 5x5 (grid)
     for i in range(0, len(matrix), 5):
         print(" ".join(matrix[i:i+5]))
 
