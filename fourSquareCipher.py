@@ -1,10 +1,11 @@
 #Definimi i alfabetit valid per enkriptim dhe dekriptim pa shkronjen Q
-
 alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','X','Y','Z']
 
 def getData(prompt, allow_spaces=False):
+    #Prompt userin per input, duke siguruar qe vetem karakteret valide alfabetike dhe opsionalisht spaces (te plaintext) perfshihen 
     while True:
-    dataInput = input(prompt).upper()
+         #Merr user input dhe konverto ne uppercase
+        dataInput = input(prompt).upper()
     
     # Check nese lejohen spaces
     if allow_spaces:
