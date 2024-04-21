@@ -8,10 +8,10 @@ def getData(prompt, allow_spaces=False):
         dataInput = input(prompt).upper()
     
     # Check nese lejohen spaces
-    if allow_spaces:
+        if allow_spaces:
             # Perfshi spaces ne te dhenat e filtruara nese lejohet
             filtered_data = ''.join([char for char in dataInput if char in alphabet or char == ' '])
-     else:
+        else:
             filtered_data = ''.join([char for char in dataInput if char in alphabet])
          
                  
