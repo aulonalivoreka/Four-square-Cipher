@@ -32,6 +32,7 @@ def makeKeyMatrix(key):
     return ''.join(matrix)
 
 def makeReferenceMatrix():
+#Krijohet nje matrice default (referente) 5x5 duke perdorur alfabetin e paradefinuar
     return ''.join(alphabet)
 
 def printMatrix(matrix):
