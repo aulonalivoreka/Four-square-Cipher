@@ -104,7 +104,7 @@ V W X Y Z
 - **Enhanced Security:** The Four-square cipher offers higher security compared to monographic substitution ciphers due to its use of digraphs. By encrypting pairs of letters, it becomes less susceptible to frequency analysis attacks. 
 - **Ease of Use:** With a user-friendly interface and clear instructions, users should be able to encrypt and decrypt messages easily.
 - **Flexibility:** The project allows users to input their own keys, providing flexibility in choosing encryption parameters.
-- **Correctness:** The encryption and decryption processes should be accurate, ensuring that the original message can be retrieved correctly from the encrypted ciphertext.`
+- **Correctness:** The encryption and decryption processes should be accurate, ensuring that the original message can be retrieved correctly from the encrypted ciphertext.
 - **Error Handling:** The script includes error handling mechanisms to deal with invalid inputs, ensuring smooth execution even in case of user errors.
 
 
