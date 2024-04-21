@@ -1,7 +1,6 @@
-#alfabeti pa shkronjen Q 
+#Definimi i alfabetit valid per enkriptim dhe dekriptim pa shkronjen Q
 
 alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','X','Y','Z']
-
 
 def getData(prompt, allow_spaces=False):
     while True:
